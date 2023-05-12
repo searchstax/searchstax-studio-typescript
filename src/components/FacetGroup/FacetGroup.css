@@ -1,0 +1,45 @@
+.FacetGroup {
+	display:inline-block;
+	margin: 0.5rem;
+}
+
+.FacetGroup-title {
+	display: inline;
+}
+
+.FacetGroup-facet {
+	display: inline-block;
+	height: 2rem;
+	line-height: 1.8rem;
+	border-radius: 2rem;
+	margin: 0 0.1rem;
+	padding: 0.1rem 0.2rem;
+	padding-left: 1rem;
+	background-color: rgba(220,220,220,1);
+	cursor: pointer;
+}
+
+.FacetGroup-facet-selected {
+	display: inline-block;
+	height: 2rem;
+	line-height: 1.8rem;
+	border-radius: 2rem;
+	margin: 0 0.1rem;
+	padding: 0.1rem 0.2rem;
+	padding-left: 1rem;
+  	background-color: rgba(251, 102, 48,1);
+	cursor: pointer;
+}
+
+.FacetGroup-facetCount {
+	display: inline-block;
+	height: 1.8rem;
+	width: 1.8rem;
+	line-height: 1.8rem;
+	border-radius: 1rem;
+	margin-left: 0.25rem;
+	color: #000000;
+	text-align: center;
+	font-size: 0.75rem;
+	background-color: rgba(255,255,255,1);
+}

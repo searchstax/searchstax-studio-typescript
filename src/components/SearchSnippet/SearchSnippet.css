@@ -1,0 +1,60 @@
+.SearchSnippet {
+  position: relative;
+  display: block;
+  margin: 1rem;
+  box-shadow: 2px 2px 5px rgba(100,100,100,0.2);
+  text-align: left;
+  cursor: pointer;
+}
+
+.SearchSnippet-badge {
+  display: inline-block;
+  min-width: 10rem;
+  padding: 0.25rem 1rem;
+  color: rgba(255,255,255,1);
+  background-color: rgba(51,71,90,1);
+  font-size: 0.8rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  border-radius: 3px 0 0 0 ;
+}
+
+.SearchSnippet-content {
+  padding: 0.5rem;
+}
+
+.SearchSnippet-title {
+  font-size: 1.25rem;
+}
+
+.SearchSnippet-link {
+  padding: 0 0 0.5rem 0;
+}
+
+.SearchSnippet-image {
+  height: 5rem;
+  width: 5rem;
+}
+
+.SearchSnippet-image img {
+  height: auto;
+  width: 100%;
+}
+
+.SearchSnippet-description {
+  padding: 0.5rem 0;
+}
+
+.SearchSnippet-featured {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 24px;
+  width: 24px;
+  background-color: rgba(51,71,90,1);
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDE5LjQ4MSAxOS40ODEiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiIGNsYXNzPSIiPjxnPgogIDxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8cGF0aCBkPSJtMTAuMjAxLC43NThsMi40NzgsNS44NjUgNi4zNDQsLjU0NWMwLjQ0LDAuMDM4IDAuNjE5LDAuNTg3IDAuMjg1LDAuODc2bC00LjgxMiw0LjE2OSAxLjQ0Miw2LjIwMmMwLjEsMC40MzEtMC4zNjcsMC43Ny0wLjc0NSwwLjU0MWwtNS40NTItMy4yODgtNS40NTIsMy4yODhjLTAuMzc5LDAuMjI4LTAuODQ1LTAuMTExLTAuNzQ1LTAuNTQxbDEuNDQyLTYuMjAyLTQuODEzLTQuMTdjLTAuMzM0LTAuMjg5LTAuMTU2LTAuODM4IDAuMjg1LTAuODc2bDYuMzQ0LS41NDUgMi40NzgtNS44NjRjMC4xNzItMC40MDggMC43NDktMC40MDggMC45MjEsMHoiIGZpbGw9IiNmZmZmZmYiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiIGNsYXNzPSIiPjwvcGF0aD4KICA8L2c+CjwvZz48L3N2Zz4=');
+  background-size: 0.8rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 0 3px 0 0 ;
+}

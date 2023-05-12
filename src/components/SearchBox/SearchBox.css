@@ -1,0 +1,90 @@
+.SearchBox {
+	display: flex;
+	height: 3rem;
+	padding: 0 0.6rem 0 1.5rem;
+	border: solid;
+	border-width: 1px;
+	border-color: rgba(100,100,100,1);
+	border-radius: 1.5rem;
+	background-color: rgba(255,255,255,1);
+	position: relative;
+	align-items: center;
+}
+
+.SearchBox-query, .SearchBox-query:focus {
+	height: 2rem;
+	border: none;
+	outline: none;
+	padding: 0.25rem;
+	font-size:1.25rem;
+	line-height: 2rem;
+}
+
+.SearchBox-submit {
+	border: none;
+	outline: none;
+	position: relative;
+	height: 2rem;
+	width: 2rem;
+	background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iNzJweCIgaGVpZ2h0PSI3MnB4IiB2aWV3Qm94PSIwIDAgNzIgNzIiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDcyIDcyIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGZpbGw9IiNGQzY3MzAiIGQ9Ik01NC4wMzYsNDguMDM4TDcxLjQxOSw2NS40M2wtNS41NTEsNC45NjNMNDkuNTEyLDU0LjAzM2MtNS4yMiw0LjIzLTExLjg3MSw2Ljc1OS0xOS4xMSw2Ljc1OQ0KCUMxMy42MTMsNjAuNzkyLDAsNDcuMTgxLDAsMzAuMzk3QzAsMTMuNjA5LDEzLjYxMywwLDMwLjQwMSwwYzE2Ljc4NiwwLDMwLjM5NiwxMy42MDksMzAuMzk2LDMwLjM5Nw0KCWMwLDcuMjQyLTIuNTM0LDEzLjg4OC02Ljc2MiwxOS4xMTFWNDguMDM4eiBNMzAuNDE0LDUyLjcxYzEyLjMzOSwwLDIyLjM0Mi0xMCwyMi4zNDItMjIuMzQxYzAtMTIuMzM5LTEwLjAwMy0yMi4zMzktMjIuMzQyLTIyLjMzOQ0KCWMtMTIuMzQxLDAtMjIuMzQxLDEwLTIyLjM0MSwyMi4zMzlDOC4wNzMsNDIuNzEsMTguMDczLDUyLjcxLDMwLjQxNCw1Mi43MSIvPg0KPC9zdmc+DQo=');
+	background-size: 1.7rem;
+  	background-repeat: no-repeat;
+  	background-position: center center;
+  	background-color: rgba(0,0,0,0);
+  	cursor: pointer;
+}
+
+.SearchBox-submit-clear {
+	border: none;
+	outline: none;
+	position: relative;
+	height: 2rem;
+	width: 2rem;
+	background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDI1LjAuMSwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCA0OCA0OCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDggNDg7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7ZmlsbDojRkY3OTU5O30KPC9zdHlsZT4KPHBhdGggY2xhc3M9InN0MCIgZD0iTTI2LjksMjQuMWw2LjQsNi40YzAuOCwwLjgsMC44LDIsMCwyLjhjLTAuOCwwLjgtMiwwLjgtMi44LDBMMjQsMjYuOWwtNi40LDYuNGMtMC44LDAuOC0yLDAuOC0yLjgsMAoJYy0wLjgtMC44LTAuOC0yLDAtMi44bDYuNC02LjRsLTYuNC02LjRjLTAuOC0wLjgtMC44LTIsMC0yLjhjMC44LTAuOCwyLTAuOCwyLjgsMGw2LjQsNi40bDYuNC02LjRjMC44LTAuOCwyLTAuOCwyLjgsMAoJYzAuOCwwLjgsMC44LDIsMCwyLjhMMjYuOSwyNC4xeiBNMjQsNDguMWMtMTMuMywwLTI0LTEwLjctMjQtMjRzMTAuNy0yNCwyNC0yNHMyNCwxMC43LDI0LDI0UzM3LjMsNDguMSwyNCw0OC4xeiBNMjQsNDMuNAoJYzEwLjcsMCwxOS40LTguNywxOS40LTE5LjRTMzQuNyw0LjcsMjQsNC43UzQuNiwxMy4zLDQuNiwyNC4xUzEzLjMsNDMuNCwyNCw0My40eiIvPgo8L3N2Zz4K');
+	background-size: 1.7rem;
+  	background-repeat: no-repeat;
+  	background-position: center center;
+  	background-color: rgba(0,0,0,0);
+  	cursor: pointer;
+}
+
+.SearchBox-submit-loading {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    border: 3px solid #FFF;
+    border-bottom-color: rgba(251, 102, 48,1);
+    border-radius: 50%;
+    background-color: rgba(0,0,0,0);
+    box-sizing: border-box;
+    animation: waitRotation 1s linear infinite;
+}
+@keyframes waitRotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.SearchBox-suggestion {
+	position: absolute;
+	top: 100%;
+	left: 1rem;
+	width: calc(100% - 2rem);
+	background-color: rgba(255,255,255,1);
+	box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+.SearchBox-suggestion-item {
+	padding: 0.25rem 1rem;
+	text-align: left;
+	font-size: 1rem;
+	color: rgba(0,0,0,1);
+	cursor: pointer;
+}
+
+.SearchBox-suggestion-item:hover {
+	background-color: rgba(251, 102, 48,1);
+}

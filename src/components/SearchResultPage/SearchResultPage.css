@@ -1,0 +1,129 @@
+.SearchResultPage {
+  text-align: center;
+}
+
+.SearchResultPage-header {
+  background-color: #EEEEEE;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.SearchResultPage-options {
+  display: flex;
+  margin: 0.25rem 1rem;
+  line-height: 2rem;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.SearchResultPage-sort {
+  display: flex;
+  align-items: center;
+}
+
+.SearchResultPage-toggle-list, .SearchResultPage-toggle-grid  {
+  border: none;
+  height: 1.5rem;
+  width: 1.5rem;
+  margin: 0 0.5rem;
+  padding: 0.8rem;
+  background-size: 0.8rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.SearchResultPage-toggle-list {
+  background-image: url('data:image/svg+xml; base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDI1LjAuMSwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCA0OCA0OCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDggNDg7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7ZmlsbDojMzM0NzVBO30KPC9zdHlsZT4KPGc+Cgk8cmVjdCBjbGFzcz0ic3QwIiB3aWR0aD0iNDgiIGhlaWdodD0iMTEuOCIvPgoJPHJlY3QgeT0iMTguMSIgY2xhc3M9InN0MCIgd2lkdGg9IjQ4IiBoZWlnaHQ9IjExLjgiLz4KCTxyZWN0IHk9IjM2LjIiIGNsYXNzPSJzdDAiIHdpZHRoPSI0OCIgaGVpZ2h0PSIxMS44Ii8+CjwvZz4KPC9zdmc+Cg==');
+}
+
+.SearchResultPage-toggle-grid {
+  background-image: url('data:image/svg+xml; base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDI1LjAuMSwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCA0OCA0OCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDggNDg7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7ZmlsbDojMzM0NzVBO30KPC9zdHlsZT4KPGc+Cgk8cmVjdCBjbGFzcz0ic3QwIiB3aWR0aD0iMTEuOCIgaGVpZ2h0PSIxMS44Ii8+Cgk8cmVjdCB4PSIxOC4xIiBjbGFzcz0ic3QwIiB3aWR0aD0iMTEuOCIgaGVpZ2h0PSIxMS44Ii8+Cgk8cmVjdCB4PSIzNi4yIiBjbGFzcz0ic3QwIiB3aWR0aD0iMTEuOCIgaGVpZ2h0PSIxMS44Ii8+Cgk8cmVjdCB5PSIxOC4xIiBjbGFzcz0ic3QwIiB3aWR0aD0iMTEuOCIgaGVpZ2h0PSIxMS44Ii8+Cgk8cmVjdCB4PSIxOC4xIiB5PSIxOC4xIiBjbGFzcz0ic3QwIiB3aWR0aD0iMTEuOCIgaGVpZ2h0PSIxMS44Ii8+Cgk8cmVjdCB4PSIzNi4yIiB5PSIxOC4xIiBjbGFzcz0ic3QwIiB3aWR0aD0iMTEuOCIgaGVpZ2h0PSIxMS44Ii8+Cgk8cmVjdCB5PSIzNi4yIiBjbGFzcz0ic3QwIiB3aWR0aD0iMTEuOCIgaGVpZ2h0PSIxMS44Ii8+Cgk8cmVjdCB4PSIxOC4xIiB5PSIzNi4yIiBjbGFzcz0ic3QwIiB3aWR0aD0iMTEuOCIgaGVpZ2h0PSIxMS44Ii8+Cgk8cmVjdCB4PSIzNi4yIiB5PSIzNi4yIiBjbGFzcz0ic3QwIiB3aWR0aD0iMTEuOCIgaGVpZ2h0PSIxMS44Ii8+CjwvZz4KPC9zdmc+Cg=='); 
+}
+
+.SearchResultPage-sort-menu {
+  border: none;
+  height: 2rem;
+  margin: 0 0.5rem;
+  padding: 0.5rem;
+  padding-right: 2rem;
+  background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5'%3E%3Cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right .75rem center/8px 10px;
+  background-color: #f2f2f2;
+  appearance: none;
+}
+
+.SearchResultPage-result-list {
+  display: grid;
+  grid-template-columns: auto;
+}
+
+.SearchResultPage-result-grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.SearchResultPage-link {
+  color: #61dafb;
+}
+
+.SearchResultPage-body {
+  display: grid;
+  grid-template-columns: 15rem auto;
+}
+
+.SearchResultPage-body-inline {
+  display: grid;
+  grid-template-rows: auto auto;
+}
+
+.SearchResultPage-facets {
+  text-align: left;
+  padding: 0rem 1rem;
+}
+
+.SearchResultPage-pagination-button {
+  margin: 0 0.5rem;
+  font-size: 1rem;
+  border: none;
+  background-color: rgba(0,0,0,0);
+  color: rgba(251, 102, 48,1);
+  cursor: pointer;
+}
+
+.SearchResultPage-pagination-button:disabled {
+  color: rgba(150,150,150,1);
+  cursor: auto;
+}
+
+.SearchResultPage-scrollBottom {
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.SearchResultPage-loading {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  border: 3px solid #FFF;
+  border-bottom-color: rgba(251, 102, 48,1);
+  border-radius: 50%;
+  background-color: rgba(0,0,0,0);
+  box-sizing: border-box;
+  animation: waitRotation 1s linear infinite;
+}
+
+@keyframes waitRotation {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}

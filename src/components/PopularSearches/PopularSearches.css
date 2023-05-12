@@ -1,0 +1,49 @@
+.PopularSearches {
+    display:inline-block;
+    margin: 0.5rem;
+}
+
+.PopularSearches-loading {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    border: 3px solid #FFF;
+    border-bottom-color: rgba(251, 102, 48,1);
+    border-radius: 50%;
+    background-color: rgba(0,0,0,0);
+    box-sizing: border-box;
+    animation: waitRotation 1s linear infinite;
+}
+
+@keyframes waitRotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.PopularSearches-link {
+    display: inline-block;
+    height: 2rem;
+    line-height: 1.8rem;
+    border-radius: 2rem;
+    margin: 0.1rem;
+    padding: 0.1rem 0.2rem;
+    padding-left: 1rem;
+    background-color: rgba(220,220,220,1);
+    cursor: pointer;
+}
+
+.PopularSearches-link-count {
+    display: inline-block;
+    height: 1.8rem;
+    width: 1.8rem;
+    line-height: 1.8rem;
+    border-radius: 1rem;
+    margin-left: 0.25rem;
+    color: #000000;
+    font-size: 0.75rem;
+    background-color: rgba(255,255,255,1);
+}

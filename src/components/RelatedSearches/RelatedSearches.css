@@ -1,0 +1,30 @@
+.RelatedSearches-link {
+  display: inline-block;
+  color: rgba(251, 102, 48,1);
+  cursor: pointer;
+}
+
+.RelatedSearches-link:hover {
+  text-decoration: underline;
+}
+
+.RelatedSearches-loading {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    border: 3px solid #FFF;
+    border-bottom-color: rgba(251, 102, 48,1);
+    border-radius: 50%;
+    background-color: rgba(0,0,0,0);
+    box-sizing: border-box;
+    animation: waitRotation 1s linear infinite;
+}
+
+@keyframes waitRotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

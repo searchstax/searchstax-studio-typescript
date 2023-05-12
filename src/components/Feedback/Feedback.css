@@ -1,0 +1,131 @@
+.Feedback {
+	position: relative;
+	display: inline-block;
+	height: 3rem;
+	margin: 0.5rem;
+}
+
+.Feedback-button {
+	border: none;
+  	color: rgba(251, 102, 48,1);
+  	background-color: rgba(0,0,0,0);
+  	cursor: pointer;
+}
+
+.Feedback-flyout {
+	position: absolute;
+	top: 3rem;
+	right: 0;
+	width: 30rem;
+	color: #000;
+	background-color: #f2f2f2;
+	box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+	z-index: 9999999;
+}
+
+.Feedback-flyout-header {
+	display: flex;
+	justify-content: space-between;
+	padding: 0.5rem;
+	font-size: 1rem;
+	background-color: #e4e4e4;
+}
+
+.Feedback-flyout-header button {
+	border: none;
+	height: 1rem;
+	width: 1rem;
+	background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGlkPSJDYXBhXzEiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDM4Ni42NjcgMzg2LjY2NyIgaGVpZ2h0PSI1MTIiIHZpZXdCb3g9IjAgMCAzODYuNjY3IDM4Ni42NjciIHdpZHRoPSI1MTIiIGNsYXNzPSIiPjxnPjxwYXRoIGQ9Im0zODYuNjY3IDQ1LjU2NC00NS41NjQtNDUuNTY0LTE0Ny43NyAxNDcuNzY5LTE0Ny43NjktMTQ3Ljc2OS00NS41NjQgNDUuNTY0IDE0Ny43NjkgMTQ3Ljc2OS0xNDcuNzY5IDE0Ny43NyA0NS41NjQgNDUuNTY0IDE0Ny43NjktMTQ3Ljc2OSAxNDcuNzY5IDE0Ny43NjkgNDUuNTY0LTQ1LjU2NC0xNDcuNzY4LTE0Ny43N3oiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIGNsYXNzPSJhY3RpdmUtcGF0aCIgc3R5bGU9ImZpbGw6I0ZDNjczMCIgZGF0YS1vbGRfY29sb3I9IiMwMDAwMDAiPjwvcGF0aD48L2c+IDwvc3ZnPg==');
+	background-size: 1.7rem;
+  	background-repeat: no-repeat;
+  	background-position: center center;
+  	background-color: rgba(0,0,0,0);
+  	cursor: pointer;
+}
+
+.Feedback-flyout-form {
+	text-align: left;
+	padding: 0.5rem;
+	font-size: 0.95rem;
+}
+
+.Feedback-flyout-form-error {
+	padding: 0.25rem;
+	font-size: 0.8rem;
+	color: #721c24;
+	background-color: #f8d7da;
+	border: solid;
+	border-width: 1px;
+	border-color: #f5c6cb;
+	border-radius: 4px;
+}
+
+.Feedback-flyout-form-rating {
+	display: flex;
+	justify-content: space-between;
+	font-size:0.7rem;
+	color:#999999;
+}
+
+.Feedback-flyout-form label{
+    display:inline-block;
+    text-align:center;
+    margin:0 0.2em;
+}
+
+.Feedback-flyout-form label input[type="radio"] {
+    display:block;
+    margin: 0.5em auto;
+}
+
+.Feedback-flyout-form input[type="radio"]:checked {
+	background-color: #fc6730;
+	border-color: #fc6730;
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+}
+
+.Feedback-flyout-form textarea, input[type="text"] {
+	width: calc(100% - 2rem);
+	margin: auto auto 1rem auto;
+	padding: 0.25rem;
+}
+
+.Feedback-flyout-footer {
+	display: flex;
+	justify-content: space-between;
+	padding: 1rem;
+}
+
+.Feedback-flyout-footer-image {
+	width: 130px;
+}
+
+.Feedback-flyout-footer button {
+	padding: 1rem 5rem;
+	border-radius: 5px;
+	border: none;
+	color: #FFFFFF;
+	background-color: #0c8c84;
+	cursor: pointer;
+}
+
+.Feedback-submit-loading {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    border: 3px solid #FFF;
+    border-bottom-color: rgba(150, 150, 150, 1);
+    border-radius: 50%;
+    background-color: rgba(0,0,0,0);
+    box-sizing: border-box;
+    animation: waitRotation 1s linear infinite;
+}
+
+@keyframes waitRotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
