@@ -61,6 +61,11 @@ You can add an auto-suggest keyword dictionary in the SearchStax Studio Dashboar
 
 You can create a dictionary of related queries for a keyword. `SearchResultPage` will show related keywords (when available) using the `RelatedSearches` component. You can display this component above the search results (recommended for infinite scroll) or at the bottom. Related search clicks are tracked as a separate event in SearchStax Analytics.
 
+## Spell Checking
+[Spell Checking Guide](https://www.searchstax.com/docs/searchstudio/spell-check-tab/)
+
+You can provide spellchecking for search terms with a data-driven or dictionary-driven model which can be configured in the SearchStax Studio Dashboard. `SearchResultPage` will show a spell check correction/recommendation if one has been included in the search API response when there are no results. By default only one spell check recommendation is provided but you can request more with the `spellcheck.count` request parameter.
+
 # Reporting
 
 SearchStax Analytics captures a number of front end and back end metrics about user searches such as top keywords, response time, rankings, and more. `SearchResultPage` tracks when a user starts a new search and clicks on a search result.

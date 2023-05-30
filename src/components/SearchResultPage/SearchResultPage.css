@@ -119,6 +119,12 @@
   animation: waitRotation 1s linear infinite;
 }
 
+.SearchResultPage-spellcheck {
+  display: inline-block;
+  color: rgba(251, 102, 48,1);
+  cursor: pointer;
+}
+
 @keyframes waitRotation {
   0% {
       transform: rotate(0deg);

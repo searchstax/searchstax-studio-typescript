@@ -45,6 +45,14 @@ export interface sortOptions {
   label: string,
 }
 
+export interface spellcheck {
+  numFound: number,
+  suggestion: {
+    word: string,
+    freq: number,
+  }[],
+}
+
 export interface searchResult {
   externalLinks: externalLink[],
   response: {
@@ -60,6 +68,9 @@ export interface searchResult {
   metadata: {
     facets: facetLabel[],
     sorts: sortOptions[],
+  },
+  spellcheck: {
+    suggestions: any[],
   },
 }
 

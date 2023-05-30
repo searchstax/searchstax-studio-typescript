@@ -24,12 +24,19 @@ export function SearchBox (props: {
   } = props;
   const [searchString, setSearchString] = useState<string>('');
   const [suggestedTerms, setSuggestedTerms] = useState<suggestion[]>([]);
-  const [clearable, setClearable] = useState<boolean>(false);
+  const [clearable, setClearable] = useState<boolean>(true);
 
   // Update internal searchString for controlled input when search result page changes query
   useEffect(() => {
     setSearchString(searchQuery);
   }, [searchQuery]);
+
+  // Reset suggestions when a new search is loading
+  useEffect(() => {
+    if (searchLoading === true) {
+      setSuggestedTerms([]);
+    }
+  }, [searchLoading]);
 
   // Get suggestions when user starts typing search query
   const handleChange = (search: string): void => {

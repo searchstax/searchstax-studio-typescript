@@ -88,7 +88,10 @@ export function FacetList (props: {
                           {field.title} ({field.count})
                         </label>
                       ))}
-                      <button className="FacetList-expand" onClick={() => { setShowAll(true) }}>More</button>
+                      {facet.fields.length > 3
+                        ? <button className="FacetList-expand" onClick={() => { setShowAll(true) }}>More</button>
+                        : ''
+                      }
                     </div>
                     )
               )

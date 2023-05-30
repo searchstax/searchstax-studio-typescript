@@ -63,7 +63,7 @@ export function RelatedSearches (props: {
                   ))}
                 </>
                 )
-              : ('')
+              : ''
           )
         }
     </div>
